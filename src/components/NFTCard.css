@@ -1,0 +1,170 @@
+
+#nft-container {
+  /* height: 32rem; */
+  height: 530px;
+  /* width: 20rem; */
+  width: 320px;
+  background-color: var(--neutral-color-verydarkblue-card);
+  border-radius: 15px;
+}
+
+.content-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 20px;
+  box-shadow: 0px 40px 15px 15px rgba(23,19,19,0.25);
+}
+
+#nft-img {
+  background-image: url('../images/image-equilibrium.jpg');
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+#eye-icon {
+  display: none;
+  background-image: url('../images/icon-view.svg');
+  width: 50px;
+  height: 50px;
+}
+
+.overlay {
+  display: none;
+  border-radius: 15px;
+}
+
+/*
+##############################
+
+## NFT Image Hover Rules ##
+
+*/
+
+#nft-img:hover #eye-icon {
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+#nft-img:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#nft-img:hover .overlay {
+  background-color: var(--primary-color-cyan);
+  height: 100%;
+  width: 100%;
+  opacity: .5;
+  display: flex;
+}
+
+/*############################*/
+
+.item-info {
+  margin-bottom: 15px;
+}
+
+.nft-info-bar {
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 20px;
+}
+
+.time-left-ind,
+.eth-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.clock-svg {
+  background-image: url("../images/icon-clock.svg");
+  height: 15px;
+  width: 15px;
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.ethereum-svg {
+  background-image: url("../images/icon-ethereum.svg");
+  height: 17px;
+  width: 10px;
+  background-size: cover;
+  margin-right: 5px;
+}
+
+
+#info-footer {
+  border-top: 1px solid var(--primary-color-softBlue);
+  width: 100%;
+  height: 15%;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+
+.creator-info {
+  display: flex;
+  align-items: center;
+}
+
+.creator-avatar {
+  background-image: url('../images/image-avatar.png');
+  background-size: cover;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: 1px solid var(--neutral-color-white);
+  margin-right: 15px;
+}
+
+
+/*
+
+## Card Text Colors and font weights ##
+
+*/
+
+.item-name,
+.creator-info {
+  color: var(--neutral-color-white);
+}
+
+.creator-name:hover {
+  color: var(--primary-color-cyan);
+  cursor: pointer;
+}
+
+.item-name:hover {
+  color: var(--primary-color-cyan);
+  cursor: pointer;
+}
+
+.eth-info {
+  color: var(--primary-color-cyan);
+  font-weight: 400;
+}
+
+.time-left-ind,
+.item-info,
+.creator-span {
+  color: var(--primary-color-softBlue);
+  font-weight: 300;
+}
+
+.item-info {
+  line-height: 1.4;
+}
+
+.item-name {
+  font-weight: 600;
+}
