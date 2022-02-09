@@ -4,14 +4,15 @@ import './NFTCard.css';
 
 const NFTCard = () => {
   return (
-    <div id="nft-container">
+    <main className="container">
+      <div id="nft-container">
       <div className="content-container">
         <div id="nft-img">
           <div className="overlay"></div>
           <div id="eye-icon"></div>
         </div>
         <div className="info-section">
-          <p className="item-name">Equilibrium #3429</p>
+          <h1 className="item-name">Equilibrium #3429</h1>
           <div className="item-info">Our Equilibrium collection promotes balance and calm</div>
           <div className="nft-info-bar">
             <span className="eth-info">
@@ -36,6 +37,8 @@ const NFTCard = () => {
         </div>
       </div>
     </div>
+    </main>
+    
   )
 }
 
