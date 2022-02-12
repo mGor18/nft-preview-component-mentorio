@@ -17,15 +17,14 @@ const NFTCard = () => {
             <h1 className="item-name"><a href="#">Equilibrium #3429</a></h1>
             <div className="item-info">Our Equilibrium collection promotes balance and calm</div>
             <div className="nft-info-bar">
-              <span className="eth-info">
+              <div className="eth-info">
                 <div className="ethereum-svg"></div>
                   0.041 ETH
-                </span>
-              <span className="time-left-ind">
-                <div className="clock-svg">
-                </div>
+              </div>
+              <div className="time-left-ind">
+                <div className="clock-svg"></div>
                 3 days left
-              </span>
+              </div>
             </div>
           </div>
           <div className="divider-line"></div>
