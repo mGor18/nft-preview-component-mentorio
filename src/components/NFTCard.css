@@ -5,10 +5,7 @@
 }
 
 #nft-container {
-  /* height: 32rem; */
-  height: 530px;
-  /* width: 20rem; */
-  width: 320px;
+  max-width: 320px;
   background-color: var(--neutral-color-verydarkblue-card);
   border-radius: 15px;
 }
@@ -16,10 +13,6 @@
 .content-container {
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   text-align: left;
   padding: 20px;
   box-shadow: 0px 40px 15px 15px rgba(23,19,19,0.25);
@@ -27,15 +20,12 @@
 
 #nft-img-container {
   position: relative;
-  height: 100%;
-  width: 100%;
   border-radius: 15px;
   text-decoration: none;
+  display: block;
 }
 
 .nft-image {
-  position: absolute;
-  height: 100%;
   width: 100%;
   border-radius: 15px;
 }
@@ -62,13 +52,13 @@
 #nft-img-container:hover #eye-icon {
   display: block;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #nft-img-container:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
 }
 
@@ -77,7 +67,10 @@
   height: 100%;
   width: 100%;
   opacity: .5;
-  display: flex;
+  display: block;
+  z-index: 2;
+  position: absolute;
+  bottom: 2%;
 }
 
 /*############################*/
