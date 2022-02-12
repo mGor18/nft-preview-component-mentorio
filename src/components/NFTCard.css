@@ -1,4 +1,9 @@
 
+.container {
+  height: 100%;
+  width: 100%;
+}
+
 #nft-container {
   /* height: 32rem; */
   height: 530px;
@@ -20,11 +25,18 @@
   box-shadow: 0px 40px 15px 15px rgba(23,19,19,0.25);
 }
 
-#nft-img {
-  background-image: url('../images/image-equilibrium.jpg');
+#nft-img-container {
+  position: relative;
   height: 100%;
   width: 100%;
-  background-size: cover;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.nft-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
   border-radius: 15px;
 }
 
@@ -47,20 +59,20 @@
 
 */
 
-#nft-img:hover #eye-icon {
+#nft-img-container:hover #eye-icon {
   display: block;
   position: absolute;
   z-index: 1;
 }
 
-#nft-img:hover {
+#nft-img-container:hover {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 
-#nft-img:hover .overlay {
+#nft-img-container:hover .overlay {
   background-color: var(--primary-color-cyan);
   height: 100%;
   width: 100%;
@@ -124,7 +136,7 @@
   height: 30px;
   width: 30px;
   border: 1px solid var(--neutral-color-white);
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 
@@ -133,6 +145,16 @@
 ## Card Text Colors and font weights ##
 
 */
+
+a {
+  text-decoration: none;
+  color: var(--neutral-color-white);
+}
+
+a:hover {
+  color: var(--primary-color-cyan);
+  cursor: pointer;
+}
 
 .item-name,
 .creator-info {
@@ -163,10 +185,7 @@
 
 .item-info {
   line-height: 1.4;
-}
-
-.item-name {
-  font-weight: 600;
+  
 }
 
 h1 {
