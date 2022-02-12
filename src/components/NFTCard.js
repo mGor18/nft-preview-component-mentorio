@@ -27,7 +27,6 @@ const NFTCard = () => {
               </div>
             </div>
           </div>
-          <div className="divider-line"></div>
           <div id="info-footer">
             <div className="creator-info">
               <div className="creator-avatar"></div>
