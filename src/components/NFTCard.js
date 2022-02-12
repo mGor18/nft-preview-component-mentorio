@@ -32,7 +32,7 @@ const NFTCard = () => {
           <div id="info-footer">
             <div className="creator-info">
               <div className="creator-avatar"></div>
-                <p className="creator-span">Creation of <a className="creator-name"> Jules Wyvern</a></p>
+                <p className="creator-span">Creation of <a href="#" className="creator-name"> Jules Wyvern</a></p>
             </div>
           </div>
         </div>
