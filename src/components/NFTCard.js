@@ -6,7 +6,7 @@ import nft from '../images/image-equilibrium.jpg';
 const NFTCard = () => {
   return (
     <main className="container">
-      <div id="nft-container">
+      <section id="nft-container">
         <div className="content-container">
           <a id="nft-img-container" href="#">
             <img className="nft-image" src={nft} alt="nft of a cube" />
@@ -34,7 +34,7 @@ const NFTCard = () => {
             </div>
           </footer>
         </div>
-      </div>
+      </section>
     </main>
   )
 }
