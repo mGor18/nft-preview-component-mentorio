@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](nft-preview-component/src/images/nft-preview-card-final.png)
+![](nft-preview-component/src/images/nft-preview-card-final2.png)
 
 
 ### Links
@@ -36,9 +36,10 @@ Users should be able to:
 
 ### Built with
 
-- HTML5 markup
+- HTML5 Semantic Markup
 - CSS custom properties
 - Flexbox
+- CSS Block
 - [React](https://reactjs.org/) - JS library
 - Google Fonts
 
@@ -48,6 +49,7 @@ Users should be able to:
 - More indepth use of flexbox
 - Utilizing span elements more in conjunction with CSS for more specific and difficult design changes (ex. multiple text colors in the same line)
 - Better understanding how important workflow is and fine-tuning my own process before getting my hands dirty on the actually build.
+- Using display block with position relative/absolute and accompanying attributes in css
 
 
 ## Author
